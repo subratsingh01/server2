@@ -21,7 +21,7 @@ app.get('/server1', (req, res) => {
             });
             fetch('https://swan-backend.onrender.com')
             .then((res) => {
-                console.log(res.body)
+                console.log(res.status, 'from swan')
             })
         } catch (error) {
             
@@ -29,4 +29,4 @@ app.get('/server1', (req, res) => {
     }, 300000);
 })
 
-app.listen(8001, console.log('listening on port 3000'))
+app.listen(8001, console.log('listening on port 8001'))
