@@ -18,6 +18,10 @@ app.get('/server1', (req, res) => {
             fetch('https://server1-1gv6.onrender.com')
             .then(res => {
                 console.log(res.status)
+            });
+            fetch('https://swan-backend.onrender.com')
+            .then((res) => {
+                console.log(res.body)
             })
         } catch (error) {
             
