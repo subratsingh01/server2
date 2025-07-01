@@ -21,7 +21,7 @@ app.get('/server1', (req, res) => {
             });
             fetch('https://swan-backend.onrender.com')
             .then((res) => {
-                console.log(res.body)
+                console.log(res.status, " from swan ")
             })
         } catch (error) {
             
